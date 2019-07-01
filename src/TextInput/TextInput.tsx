@@ -17,6 +17,7 @@ const TextInput: React.ComponentType<
   const {
     onChange,
     value,
+    defaultValue,
     loading,
     rightHoverElement,
     rightElement,
@@ -35,6 +36,7 @@ const TextInput: React.ComponentType<
     <InputContainer {...rest} data-disabled={disabled}>
       <Input
         value={value}
+        defaultValue={defaultValue}
         onChange={handleChange}
         ref={inputRef || ref}
         loading={loading}
